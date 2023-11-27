@@ -65,4 +65,12 @@ return require('packer').startup(function(use)
 
   -- git gutter
   use ("airblade/vim-gitgutter")
+
+  -- file tree
+  use {
+      "nvim-tree/nvim-tree.lua",
+      requires = {
+          {"nvim-tree/nvim-web-devicons"}
+      }
+  }
 end)
