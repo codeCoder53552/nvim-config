@@ -5,6 +5,9 @@ local vim = vim
 local tree = require("nvim-tree")
 
 tree.setup({
+  hijack_unnamed_buffer_when_opening = false;
+  disable_netrw = false;
+  hijack_netrw = false;
   sort = {
     -- sorter = "case_sensitive",
   },

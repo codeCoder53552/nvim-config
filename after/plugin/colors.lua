@@ -10,6 +10,7 @@ function ColorMyPencils(color)
 
 end
 
+vim.cmd('colorscheme rose-pine')
 ColorMyPencils()
 
 
