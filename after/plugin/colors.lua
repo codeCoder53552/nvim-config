@@ -1,3 +1,5 @@
+-- eat warnings
+local vim = vim
 
 function ColorMyPencils(color)
     color = color or "rose-pine"

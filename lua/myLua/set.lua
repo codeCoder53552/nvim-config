@@ -1,3 +1,6 @@
+-- eat warnings
+local vim = vim
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 

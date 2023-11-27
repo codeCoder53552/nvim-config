@@ -1,3 +1,6 @@
+-- eat warnings
+local vim = vim
+
 local dap = require("dap")
 local dapui = require("dapui")
 

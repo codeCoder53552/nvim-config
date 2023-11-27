@@ -1,7 +1,11 @@
+-- eat warnings
+local vim = vim
+
 local lsp = require("lsp-zero")
 
 -- lsp.preset("recommended")
 
+-- supported LSPs here: https://github.com/williamboman/mason-lspconfig.nvim
 require("mason").setup()
 require("mason-lspconfig").setup{
     ensure_installed = {
@@ -55,6 +59,7 @@ end)
 
 lsp.setup()
 
+-- do this for each new lsp
 lspconfig = require("lspconfig")
 lspconfig.lua_ls.setup({})
 lspconfig.clangd.setup({})
