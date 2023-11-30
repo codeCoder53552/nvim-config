@@ -60,7 +60,19 @@ end)
 lsp.setup()
 
 -- do this for each new lsp
-lspconfig = require("lspconfig")
+local lspconfig = require("lspconfig")
 lspconfig.lua_ls.setup({})
 lspconfig.clangd.setup({})
 lspconfig.pylsp.setup({})
+
+local diagnostic_enabled = true
+vim.keymap.set("n", "<leader>dt", function ()
+    if (diagnostic_enabled) then
+        vim.diagnostic.disable()
+        diagnostic_enabled = false;
+    else
+        vim.diagnostic.enable()
+        diagnostic_enabled = true;
+    end
+end)
+
